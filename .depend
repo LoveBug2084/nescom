@@ -1,0 +1,60 @@
+assemble.o: assemble.cc expr.hh parse.hh assemble.hh object.hh \
+ o65linker.hh o65.hh relocdata.hh refer.hh romaddr.hh tristate insdata.hh \
+ precompile.hh
+clever.o: clever.cc
+dataarea.o: dataarea.cc dataarea.hh
+disasm.o: disasm.cc miscfun.hh miscfun.tcc o65linker.hh o65.hh \
+ relocdata.hh refer.hh romaddr.hh
+expr.o: expr.cc expr.hh
+insdata.o: insdata.cc insdata.hh assemble.hh object.hh o65linker.hh \
+ o65.hh relocdata.hh refer.hh romaddr.hh
+link.o: link.cc o65linker.hh o65.hh relocdata.hh refer.hh romaddr.hh \
+ msginsert.hh dataarea.hh space.hh rangeset.hh range.hh range.tcc \
+ rangeset.tcc object.hh
+main.o: main.cc assemble.hh object.hh o65linker.hh o65.hh relocdata.hh \
+ refer.hh romaddr.hh precompile.hh warning.hh
+o65.o: o65.cc o65.hh relocdata.hh
+o65linker.o: o65linker.cc o65linker.hh o65.hh relocdata.hh refer.hh \
+ romaddr.hh msginsert.hh hash.hh
+object.o: object.cc dataarea.hh assemble.hh object.hh o65linker.hh o65.hh \
+ relocdata.hh refer.hh romaddr.hh warning.hh
+parse.o: parse.cc parse.hh expr.hh assemble.hh object.hh o65linker.hh \
+ o65.hh relocdata.hh refer.hh romaddr.hh tristate insdata.hh
+precompile.o: precompile.cc precompile.hh object.hh o65linker.hh o65.hh \
+ relocdata.hh refer.hh romaddr.hh assemble.hh
+refer.o: refer.cc refer.hh romaddr.hh
+romaddr.o: romaddr.cc romaddr.hh
+space.o: space.cc space.hh rangeset.hh range.hh range.tcc rangeset.tcc \
+ o65.hh relocdata.hh logfiles.hh binpacker.hh binpacker.tcc romaddr.hh \
+ o65linker.hh refer.hh
+warning.o: warning.cc warning.hh
+assemble.lo: assemble.cc expr.hh parse.hh assemble.hh object.hh \
+ o65linker.hh o65.hh relocdata.hh refer.hh romaddr.hh tristate insdata.hh \
+ precompile.hh
+clever.lo: clever.cc
+dataarea.lo: dataarea.cc dataarea.hh
+disasm.lo: disasm.cc miscfun.hh miscfun.tcc o65linker.hh o65.hh \
+ relocdata.hh refer.hh romaddr.hh
+expr.lo: expr.cc expr.hh
+insdata.lo: insdata.cc insdata.hh assemble.hh object.hh o65linker.hh \
+ o65.hh relocdata.hh refer.hh romaddr.hh
+link.lo: link.cc o65linker.hh o65.hh relocdata.hh refer.hh romaddr.hh \
+ msginsert.hh dataarea.hh space.hh rangeset.hh range.hh range.tcc \
+ rangeset.tcc object.hh
+main.lo: main.cc assemble.hh object.hh o65linker.hh o65.hh relocdata.hh \
+ refer.hh romaddr.hh precompile.hh warning.hh
+o65.lo: o65.cc o65.hh relocdata.hh
+o65linker.lo: o65linker.cc o65linker.hh o65.hh relocdata.hh refer.hh \
+ romaddr.hh msginsert.hh hash.hh
+object.lo: object.cc dataarea.hh assemble.hh object.hh o65linker.hh o65.hh \
+ relocdata.hh refer.hh romaddr.hh warning.hh
+parse.lo: parse.cc parse.hh expr.hh assemble.hh object.hh o65linker.hh \
+ o65.hh relocdata.hh refer.hh romaddr.hh tristate insdata.hh
+precompile.lo: precompile.cc precompile.hh object.hh o65linker.hh o65.hh \
+ relocdata.hh refer.hh romaddr.hh assemble.hh
+refer.lo: refer.cc refer.hh romaddr.hh
+romaddr.lo: romaddr.cc romaddr.hh
+space.lo: space.cc space.hh rangeset.hh range.hh range.tcc rangeset.tcc \
+ o65.hh relocdata.hh logfiles.hh binpacker.hh binpacker.tcc romaddr.hh \
+ o65linker.hh refer.hh
+warning.lo: warning.cc warning.hh
